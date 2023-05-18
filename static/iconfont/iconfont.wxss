@@ -1,0 +1,56 @@
+/* // 矢量图 --aliba/ */
+@font-face {
+  font-family: "iconfont"; /* Project id 4070228 */
+  src: url('//at.alicdn.com/t/c/font_4070228_zz3rcl4da7m.woff2?t=1684237281940') format('woff2'),
+  url('//at.alicdn.com/t/c/font_4070228_zz3rcl4da7m.woff?t=1684237281940') format('woff'),
+  url('//at.alicdn.com/t/c/font_4070228_zz3rcl4da7m.ttf?t=1684237281940') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shouye:before {
+  content: "\e600";
+}
+
+.icon-31haoyou:before {
+  content: "\e601";
+}
+
+.icon-gexingzhuangban:before {
+  content: "\e655";
+}
+
+.icon-xiaoxi:before {
+  content: "\e711";
+}
+
+.icon-tuijian:before {
+  content: "\e627";
+}
+
+.icon-15:before {
+  content: "\e626";
+}
+
+.icon-paihangbang:before {
+  content: "\e8b3";
+}
+
+.icon-zhibo:before {
+  content: "\e8c1";
+}
+
+.icon-diantai:before {
+  content: "\e636";
+}
+
+.icon-gedan:before {
+  content: "\e637";
+}
+
