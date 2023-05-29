@@ -195,6 +195,19 @@
     border-radius: 20rpx;
 }
 
+.recentScroll {
+  display: flex;
+  height: 200rpx;
+}
+
+.scrollItem {
+  margin-right: 20rpx;
+}
+.recentScroll image {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
 
 .cardList {
     margin-top: 20rpx;

@@ -18,6 +18,7 @@
         </view>
         <button class="confirm-btn" bindtap="sendCaptcha">点击获取验证码</button>
         <button class="confirm-btn" bindtap="login">登录</button>
+        <button class="confirm-btn" bindtap="toQrcode">二维码登录</button>
         <view class="forget-section">
             忘记密码?
         </view>
@@ -28,3 +29,5 @@
     </view>
 </view>
 
+<!--npm config set prefix "D:\Program Files\nodejs\node_global"-->
+<!--npm config set cache "D:\Program Files\nodejs\node_cache"-->

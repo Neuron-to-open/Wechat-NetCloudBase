@@ -1,0 +1,33 @@
+/* pages/player/player.wxss */.topList{
+  padding:20rpx;
+}
+
+.text {
+  text-align: center;
+  height: 80rpx;
+  width: 100%;
+  background-color: crimson;
+}
+.swiperItem{
+  width: 33%;
+  background: #fbfbfb;
+  text-align: center;
+}
+
+.swiperItem .title{
+  font-size: 30rpx;
+  line-height: 80rpx;
+  margin-right: 40rpx;
+}
+
+.scrollItm .image{
+  height: 200rpx;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.name {
+  text-align: center;
+  background-color: crimson;
+}

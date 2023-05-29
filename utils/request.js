@@ -22,9 +22,9 @@ export default (url,data={},method='GET')=>{
       success:(res)=>{
         // console.log('请求成功',res)
         // 登录请求,将用户的cookie保存至本地
-        if (data.isLogin) {
-          wx.setStorageSync('cookies', res.cookies)
-        }
+        // if (data.isLogin) {
+        //   wx.setStorageSync('cookies', res.cookies)
+        // }
         resolve(res.data) //修改promise状态为成功为resolved
       },
       fail:(err)=>{

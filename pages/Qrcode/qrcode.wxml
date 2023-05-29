@@ -1,0 +1,7 @@
+<!--pages/Qrcode/qrcode.wxml-->
+<view class="Container">
+    <button class="btn" bindtap="qrlogin">获取二维码</button>
+    <image id="qrimg" src="{{qrimg}}" class="qrimg"></image>
+</view> 
+
+

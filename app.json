@@ -3,7 +3,8 @@
     "pages/personal/personal",
     "pages/index/index",
     "pages/login/login",
-    "pages/video/video"
+    "pages/Qrcode/qrcode",
+    "pages/player/player"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -25,8 +26,8 @@
         "selectedIconPath": "/static/images/tabs/tab-home-current.png"
       },
       {
-        "pagePath": "pages/video/video",
-        "text": "视频",
+        "pagePath": "pages/player/player",
+        "text": "歌手",
         "iconPath": "/static/images/tabs/select.png",
         "selectedIconPath": "/static/images/tabs/selected.png"
       },

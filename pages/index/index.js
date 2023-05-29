@@ -1,4 +1,5 @@
 // /pages/index/index.js
+// 主页面索引
 import request from "../../utils/request";
 
 Page({
@@ -24,8 +25,9 @@ Page({
     this.setData({
       recommendList: recommendListData.result,
     }) ;
-    let topList = await request('/toplist')
-    let resultArr =[]
+    let topList = await request('/toplist') ;
+    let resultArr =[] ;
+    //歌单详情
     for(let i=0;i<5;i++){
       let topListId = topList.list[i].id ;
       let topListItem = await request('/playlist/detail',{id:topListId}) ;

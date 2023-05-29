@@ -1,0 +1,9 @@
+<!--pages/player/player.wxml-->
+
+<view class="text">内陆歌手</view>
+<scroll-view class="recentScroll" enable-flex>
+  <view class="scrollitem" wx:for="{{playerList}}" wx:key="id">
+    <image src="{{item.img1v1Url}}"></image>
+    <view class="name">{{item.name}}</view>
+  </view>
+</scroll-view>

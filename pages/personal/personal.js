@@ -1,4 +1,7 @@
 // pages/personal/personal.js
+import request from "../../utils/request"
+// 读取storage的数据
+
 let StartY = 0 ;
 let MoveY = 0 ;
 let moveDistance = 0 ;
@@ -10,6 +13,8 @@ Page({
   data: {
     coverTransform: 'translateY(0)',
     coverTransition: '' ,
+    UserInfo: {}, //用户信息
+    recentPlayList: {}, //用户最近播放记录
   },
 
   toLogin(){
@@ -22,6 +27,28 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+    let userinfor = wx.getStorageSync('userInfo')
+    console.log(userinfor ) ;
+    if (userinfor){
+      this.setData({
+        UserInfo:JSON.parse(userinfor)
+      })
+    }
+
+    this.getUserTencentPlayList(this.data.UserInfo.userId)
+    
+  },
+
+  async getUserTencentPlayList(userId){
+    let recentPlayListData = await request("/user/record", {uid:userId, type:0}) ;
+    let index = 0 ;
+    let recentPlayList = recentPlayListData.allData.splice(0, 10).map(item=>{
+      item.id = index ++ ;
+      return item ;
+    })
+    this.setData({
+      recentPlayList,
+    })
 
   },
 

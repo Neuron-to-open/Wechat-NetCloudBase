@@ -30,6 +30,12 @@ Page({
 
   },
 
+  toQrcode(){
+    wx.navigateTo({
+      url: '/pages/Qrcode/qrcode',
+    })
+  },
+
   //vue 双向绑定 ---获取用户信息
   handleInput(event){
     let type = event.currentTarget.id ;

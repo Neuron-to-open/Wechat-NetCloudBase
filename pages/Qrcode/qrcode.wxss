@@ -1,0 +1,5 @@
+/* pages/Qrcode/qrcode.wxss */
+.btn{
+  margin-top: 200rpx;
+  background-color: brown;
+}
