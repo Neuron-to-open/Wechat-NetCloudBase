@@ -12,7 +12,7 @@
   <view class="navContainer">
 
     <view class="navItem">
-      <text class="iconfont icon-tuijian"></text>
+      <text class="iconfont icon-tuijian" bindtap="toRecommend"></text>
       <text>每日推荐</text>
     </view>
 

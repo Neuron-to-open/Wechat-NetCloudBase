@@ -1,0 +1,30 @@
+<!--pages/SongDetail/SongDetail.wxml-->
+<view class="songDetailContainer">
+  <view class="author">{{song[0].name}}</view>
+  <view class="circle"></view>
+  <image class="needle {{isPlay ? 'needleRotate':''}}" src="/static/images/song/needle.png"></image>
+
+  <view class="discContainer {{isPlay ? 'discAnimation':''}}">
+    <image class="disc" src="/static/images/song/disc.png"></image>
+    <image class="musicImg" src="{{song[0].al.picUrl}}"></image>
+  </view>
+
+<!-- 进度条控制区域 -->
+<view class="progressControl">
+  <text>{{currentTime}}</text>
+   <!-- 进度条 -->
+   <view class="progress-box">
+  <progress style="width:{{progressbar + 'rpx'}}"  color="#10AEFF" active border-radius="10rpx" stroke-width="3"/>
+  </view>
+  <text>{{durationTime}}</text>
+</view>
+ 
+  <!-- 底部控制播放区域 -->
+  <view class="musicControl">
+    <text class="iconfont icon-moshiqiehuan"></text>
+    <text class="iconfont icon-shangyishoushangyige" id="pre" bindtap="handelMusic"></text>
+    <text class="iconfont {{isPlay?'icon-zanting':'icon-bofang'}} big" bindtap="handleMusicPlay"></text>
+    <text class="iconfont icon-xiayigexiayishou" id="next" bindtap="handelMusic"></text>
+    <text class="iconfont icon-24gl-playlistMusic4"></text>
+  </view>
+</view>

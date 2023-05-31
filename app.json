@@ -4,7 +4,9 @@
     "pages/index/index",
     "pages/login/login",
     "pages/Qrcode/qrcode",
-    "pages/player/player"
+    "pages/player/player",
+    "pages/SongDetail/SongDetail",
+    "pages/recommendSong/recommendSong"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -38,5 +40,7 @@
         "selectedIconPath": "/static/images/tabs/tab-my-current.png"
       }
     ]
-  }
+  },
+  "requiredBackgroundModes": ["audio"]
+
 }
